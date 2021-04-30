@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+:root {
+  --primary: #03b4e0;
+  --primary2: #016e8a;
+  --secondary: coral;
+  --light1: #aaa;
+  --light2: #ccc;
+  --light3: #dedede;
+  --light4: #fefefe;
+  --dark1: #999;
+  --dark2: #777;
+  --dark2: #555;
+  --dark3: #333;
+  --dark4: #111;
+  --shadow1: 0.3rem 0.3rem 1rem var(--dark1);
+  --gradient1: linear-gradient(
+    120deg,
+    rgba(1, 110, 138, 1) 0%,
+    rgba(3, 180, 224, 1) 100%
+  );
+  --gradient2: linear-gradient(
+    120deg,
+    rgba(1, 110, 138, 0.2) 0%,
+    rgba(3, 180, 224, 0.2) 100%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: var(--gradient2);
+  padding: 1rem;
+}
+.container {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--light4);
+  padding: 0.5rem;
+}
+.nav-container {
+  width: 7%;
+  height: 95%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: var(--light4);
+  box-shadow: var(--shadow1);
+  gap: 0.2rem;
+}
+nav a {
+  color: var(--light4);
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  padding: 0.5rem 0.2rem;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  background-color: var(--secondary);
+  transition: ease-out 0.2s;
+}
+nav a:hover {
+  background-color: var(--light3);
+}
+nav a:focus {
+  border-left: 1px solid var(--light4);
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: rgb(1, 110, 138);
+  background: var(--gradient1);
+  margin-left: 0.2rem;
+  animation: nav 0.5s forwards ease-out;
+}
+
+#content {
+  width: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark4);
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+@media (max-width: 450 px) {
+  .nav-container {
+    width: 7%;
+    height: 100%;
+    padding: 0rem 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: var(--light4);
+    box-shadow: var(--shadow1);
+    gap: 0.1rem;
+  }
+  .nav-container a {
+    color: var(--light4);
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    padding: 0;
+    margin-left: 0.2rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    background-color: var(--secondary);
+    transition: ease-out 0.2s;
+  }
+}
+@keyframes nav {
+  30% {
+    background-color: var(--light1);
+    transform: scaleY(70%);
+  }
+
+  100% {
+    color: var(--light4);
+  }
+} ;
