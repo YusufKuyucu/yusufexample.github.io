@@ -1,6 +1,8 @@
 const toggle = document.getElementById("toggle");
 let toggleControl = true;
-let aside = document.getElementById("aside");
+const aside = document.getElementById("aside");
+const cover = document.getElementById("cover");
+const back = document.getElementById("back");
 const modi = document.getElementById("modi");
 let modiControl = false;
 const root = document.querySelector(":root").style;
@@ -8,8 +10,10 @@ const hide = () => {
   toggleControl = !toggleControl;
   if (!toggleControl) {
     aside.classList.add("animation1");
+    cover.classList.add("animation1");
   } else {
     aside.classList.remove("animation1");
+    cover.classList.remove("animation1");
   }
 };
 const modiHide = () => {
@@ -47,6 +51,8 @@ const lightMode = () => {
 };
 toggle.addEventListener("click", hide);
 modi.addEventListener("click", modiHide);
+cover.addEventListener("click", hide);
+back.addEventListener("click", hide);
 
 document.querySelector("#dark").addEventListener("click", darkMode);
 document.querySelector("#blue").addEventListener("click", blueMode);
