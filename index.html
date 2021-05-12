@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./public/css/tailwind.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <div class="flex w-screen">
+      <aside class="aside w-72 bg-white shadow-xl h-screen">
+        <div class="flex place-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.04 40">
+            <path
+              d="M36.22,15.53V31.32L23.75,39.69,11.28,31.32V5.66L7.48,4V32.36A2,2,0,0,0,8.33,34l14.44,9.7a1.83,1.83,0,0,0,.92.3v0h.13v0a1.83,1.83,0,0,0,.92-.3L39.17,34A1.94,1.94,0,0,0,40,32.36V17.12Z"
+              transform="translate(-7.48 -4)"
+              style="fill: #6374fd"
+            />
+            <path
+              d="M23.75,36.39a1.79,1.79,0,0,1-1.19-.45l-5.25-4.48h3a1.66,1.66,0,0,0,1.94-1.64l.21-23.44a1.85,1.85,0,0,1,.84-1.54A1.8,1.8,0,0,1,25,4.72l15.51,7.36v3.29L26.05,9.23l-.49,25.35a1.8,1.8,0,0,1-1.81,1.81Z"
+              transform="translate(-7.48 -4)"
+              style="fill: #281576"
+            />
+          </svg>
+          <h1 class="ml-3 font-semibold text-2xl mb-1">Dastone</h1>
+        </div>
+        <ul class="menu-items">
+          <p class="font-medium">MAIN</p>
+          <li id="dashboard" class="menu-item">
+            <a href="#" class="flex w-full justify-between">
+              <span class="flex">
+                <svg
+                  id="home"
+                  data-name="home"
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 35 40"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #6374fd;
+                      }
+                      .cls-2 {
+                        fill: #325cd1;
+                      }
+                      .cls-3 {
+                        fill: rgb(229, 241, 250);
+                      }
+                    </style>
+                  </defs>
+                  <rect
+                    class="cls-1"
+                    x="11.67"
+                    y="20.84"
+                    width="11.66"
+                    height="18.33"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M39.24,20.11,22.58,4.23a.84.84,0,0,0-1.16,0L4.76,20.11a.83.83,0,0,0-.26.6V38.18A5.84,5.84,0,0,0,10.34,44H33.66a5.84,5.84,0,0,0,5.84-5.82V20.71A.83.83,0,0,0,39.24,20.11ZM27.12,42.33H17.06V25.63H27.12Zm10.71-4.15a4.16,4.16,0,0,1-4.17,4.15H28.79V24.8A.83.83,0,0,0,28,24H16.23a.83.83,0,0,0-.84.84V42.33H10.34a4.16,4.16,0,0,1-4.17-4.15V21.07L22,6,37.83,21.07Z"
+                    transform="translate(-4.5 -4)"
+                  />
+                  <path
+                    class="cls-3"
+                    d="M37.83,21.07V38.18a4.16,4.16,0,0,1-4.17,4.15H28.79V24.8A.83.83,0,0,0,28,24H16.23a.83.83,0,0,0-.84.84V42.33H10.34a4.16,4.16,0,0,1-4.17-4.15V21.07L22,6Z"
+                    transform="translate(-4.5 -4)"
+                  />
+                </svg>
+                <span class="ml-4">Dashboard</span>
+              </span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li id="apps" class="menu-item">
+            <a href="#">
+              <span class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 41.46 41.46"
+                >
+                  <rect
+                    x="0.73"
+                    y="0.73"
+                    width="15.24"
+                    height="16"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M19.24,20.73H4A.73.73,0,0,1,3.27,20V4A.73.73,0,0,1,4,3.27H19.24A.73.73,0,0,1,20,4V20A.73.73,0,0,1,19.24,20.73ZM4.73,19.27H18.51V4.73H4.73Z"
+                    transform="translate(-3.27 -3.27)"
+                    style="fill: #325cd1"
+                  />
+                  <rect
+                    x="0.73"
+                    y="24.73"
+                    width="15.24"
+                    height="16"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M19.24,44.73H4A.73.73,0,0,1,3.27,44V28A.73.73,0,0,1,4,27.27H19.24A.73.73,0,0,1,20,28V44A.73.73,0,0,1,19.24,44.73ZM4.73,43.27H18.51V28.73H4.73Z"
+                    transform="translate(-3.27 -3.27)"
+                    style="fill: #325cd1"
+                  />
+                  <rect
+                    x="25.49"
+                    y="0.73"
+                    width="15.24"
+                    height="16"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M44,20.73H28.76A.73.73,0,0,1,28,20V4a.73.73,0,0,1,.73-.73H44a.73.73,0,0,1,.73.73V20A.73.73,0,0,1,44,20.73ZM29.49,19.27H43.27V4.73H29.49Z"
+                    transform="translate(-3.27 -3.27)"
+                    style="fill: #325cd1"
+                  />
+                  <rect
+                    x="25.49"
+                    y="24.73"
+                    width="15.24"
+                    height="16"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M44,44.73H28.76A.73.73,0,0,1,28,44V28a.73.73,0,0,1,.73-.73H44a.73.73,0,0,1,.73.73V44A.73.73,0,0,1,44,44.73ZM29.49,43.27H43.27V28.73H29.49Z"
+                    transform="translate(-3.27 -3.27)"
+                    style="fill: #325cd1"
+                  />
+                </svg>
+                <span class="ml-4"> Apps </span>
+              </span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li id="authentication" class="menu-item">
+            <a href="#">
+              <span class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 37.39">
+                  <path
+                    d="M38.64,14.87H33.57v-.55a9,9,0,0,0-9-9h-1.1a9,9,0,0,0-9,9v.55H9.36A5.36,5.36,0,0,0,4,20.23v17.1A5.37,5.37,0,0,0,9.36,42.7H38.64A5.37,5.37,0,0,0,44,37.33V20.23A5.36,5.36,0,0,0,38.64,14.87Zm-22.47-.55A7.29,7.29,0,0,1,23.45,7h1.1a7.29,7.29,0,0,1,7.28,7.28v.55H16.17ZM9.36,41a3.63,3.63,0,0,1-3.62-3.63V20.23a3.62,3.62,0,0,1,3.62-3.62h5.07V41Zm6.81,0V16.61H31.83V41Zm26.09-3.63A3.63,3.63,0,0,1,38.64,41H33.57V16.61h5.07a3.62,3.62,0,0,1,3.62,3.62Z"
+                    transform="translate(-4 -5.3)"
+                    style="fill: #325cd1"
+                  />
+                </svg>
+                <span class="ml-4">Authentication</span>
+              </span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <hr />
+
+        <ul>
+          <p class="font-medium my-4">COMPONENTS & EXTRA</p>
+          <li id="ui-kit" class="menu-item">
+            <a href="#">
+              <span class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 43.81">
+                  <polygon
+                    points="0.82 10.15 18.99 0.77 39.18 10.15 19.84 21.21 0.82 10.15"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M23.84,24.08A.86.86,0,0,1,23.4,24l-19-11.07A.73.73,0,0,1,4,12.23a.76.76,0,0,1,.42-.65L22.59,2.19a.87.87,0,0,1,.77,0l20.18,9.38a.76.76,0,0,1,.46.65.78.78,0,0,1-.39.69L24.27,24A.82.82,0,0,1,23.84,24.08ZM6.44,12.28l17.4,10.13,17.65-10.1L23,3.73Z"
+                    transform="translate(-4 -2.1)"
+                    style="fill: #325cd1"
+                  />
+                  <polygon
+                    points="0.82 32.67 19.84 43.05 39.18 32.67 39.18 10.15 19.84 21.21 0.82 10.15 0.82 32.67"
+                    style="fill: #dcebff"
+                  />
+                  <path
+                    d="M23.84,45.9a.87.87,0,0,1-.42-.1l-19-10.37A.75.75,0,0,1,4,34.77V12.25a.75.75,0,0,1,.42-.67.86.86,0,0,1,.84,0L23.84,22.41,42.75,11.59a.87.87,0,0,1,.83,0,.75.75,0,0,1,.42.67V34.77a.76.76,0,0,1-.41.66L24.25,45.8A.86.86,0,0,1,23.84,45.9ZM5.65,34.33l18.19,9.92,18.51-9.92V13.61L24.27,24a.87.87,0,0,1-.87,0L5.65,13.63Z"
+                    transform="translate(-4 -2.1)"
+                    style="fill: #325cd1"
+                  />
+                  <line
+                    x1="19.84"
+                    y1="43.47"
+                    x2="19.84"
+                    y2="21.22"
+                    style="fill: #dcebff"
+                  />
+                  <rect
+                    x="19.01"
+                    y="21.22"
+                    width="1.65"
+                    height="22.25"
+                    style="fill: #325cd1"
+                  />
+                </svg>
+                <span class="ml-4">UI Kit</span>
+              </span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </li>
+
+          <li id="widgets" class="menu-item">
+            <a href="#">
+              <span class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 38.45 39.82"
+                >
+                  <path
+                    d="M42.89,13.39,24.81,4.15a.68.68,0,0,0-.59,0l-19,9.24a.66.66,0,0,0,0,1.18l19,10.12a.66.66,0,0,0,.64,0L42.92,14.56A.66.66,0,0,0,42.89,13.39Zm-34.41,0,15.7-7.61a.68.68,0,0,1,.59,0l15.14,7.62a.66.66,0,0,1,0,1.17L24.79,23a.64.64,0,0,1-.63,0L8.46,14.63A.67.67,0,0,1,8.48,13.44Z"
+                    transform="translate(-4.8 -4.08)"
+                    style="fill: #325cd1"
+                  />
+                  <path
+                    d="M24.11,33.38,6,23.69A.73.73,0,0,0,5,24H5a.74.74,0,0,0,.33,1L24.16,35.1a.76.76,0,0,0,.72,0L42.83,25a.75.75,0,0,0,.3-1h0a.76.76,0,0,0-1-.3L24.83,33.38A.76.76,0,0,1,24.11,33.38Z"
+                    transform="translate(-4.8 -4.08)"
+                    style="fill: #325cd1"
+                  />
+                  <path
+                    d="M24.11,42.09,6,32.39a.74.74,0,0,0-1,.34H5a.75.75,0,0,0,.33,1l18.83,10.1a.77.77,0,0,0,.72,0l18-10.09a.75.75,0,0,0,.3-1h0a.76.76,0,0,0-1-.29L24.83,42.08A.76.76,0,0,1,24.11,42.09Z"
+                    transform="translate(-4.8 -4.08)"
+                    style="fill: #325cd1"
+                  />
+                </svg>
+                <span class="ml-4">Widgets</span>
+              </span>
+              <span class="bg-green-200 px-2 rounded">New</span>
+            </a>
+          </li>
+          <li id="pages" class="menu-item">
+            <a href="#">
+              <span class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.3 40">
+                  <rect
+                    x="9.56"
+                    y="25.33"
+                    width="12.09"
+                    height="1.73"
+                    style="fill: #325cd1"
+                  />
+                  <rect
+                    x="14.78"
+                    y="19.9"
+                    width="1.66"
+                    height="12.57"
+                    style="fill: #325cd1"
+                  />
+                  <path
+                    d="M29.32,4H12.08A4.06,4.06,0,0,0,8.35,8.18V40.07A3.86,3.86,0,0,0,12.13,44H35.87a3.86,3.86,0,0,0,3.78-3.93V14.74Zm.21,2.65,7.29,7.59H29.53Zm6.34,35.62H12.13A2.16,2.16,0,0,1,10,40.07V8.18a2.39,2.39,0,0,1,2.08-2.45H27.87V16H38V40.07A2.16,2.16,0,0,1,35.87,42.27Z"
+                    transform="translate(-8.35 -4)"
+                    style="fill: #325cd1"
+                  />
+                </svg>
+                <span class="ml-4">Pages</span>
+              </span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div
+        id="content"
+        class="dashboard-content bg-white shadow-xl flex-auto m-2 p-2 relative"
+      >
+        <nav class="flex justify-between border-b">
+          <div>
+            <i class="fas fa-bars"></i>
+            <a href="#" class="px-2"><span>+ New Task</span></a>
+          </div>
+          <div>
+            <i class="fas fa-search px-2"></i>
+            <i id="bell" class="far fa-bell p-2 cursor-pointer"></i>
+            <i class="fas fa-user-tie p-2 bg-pink-300 rounded-full"></i>
+          </div>
+        </nav>
+        <div class="flex justify-between p-2 shadow items-center">
+          <div>
+            <p>Analytics</p>
+            <span>Dastone</span>
+            <span>/</span>
+            <span>Dashboard</span>
+          </div>
+          <div>
+            <span class="border border-gray-400 p-1 rounded">
+              <i class="far fa-calendar p-2"></i>
+              <i class="fas fa-download p-2"></i>
+            </span>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="card m-4 px-4 py-8 shadow-md border grid gap-2">
+            <p>Seassions</p>
+            <h2 class="font-medium">24k</h2>
+            <div>
+              <i class="fas fa-chart-line green text-green-600"></i>
+              <span class="text-green-500">8.5%</span>
+              <span class="text-gray-500 text-sm">New Seassions Today</span>
+            </div>
+            <div class="flex justify-center">
+              <i class="fas fa-user-friends text-gray-500"></i>
+            </div>
+          </div>
+          <div class="card m-4 px-4 py-8 shadow-md border">
+            <p>Seassions</p>
+            <h2 class="font-medium">24k</h2>
+            <div>
+              <i class="fas fa-chart-line green text-green-600"></i>
+              <span class="text-green-500">8.5%</span>
+              <span>New Seassions Today</span>
+            </div>
+            <div class="flex justify-center">
+              <i class="fas fa-user-friends"></i>
+            </div>
+          </div>
+          <div class="card m-4 px-4 py-8 shadow-md border">
+            <p>Seassions</p>
+            <h2 class="font-medium">24k</h2>
+            <div>
+              <i class="fas fa-chart-line green text-green-600"></i>
+              <span class="text-green-500">8.5%</span>
+              <span>New Seassions Today</span>
+            </div>
+            <div class="flex justify-center">
+              <i class="fas fa-user-friends"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between shadow p-4">
+          <p>Audience Overview</p>
+          <p>This Years</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/index.js"></script>
+  </body>
+</html>
