@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap");
+:root, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #f8f8f8;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  width: calc( 100vw - 1rem );
+  height: 100vh;
+}
+
+nav {
+  position: static;
+  box-sizing: border-box;
+  height: 3rem;
+  padding: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+nav img {
+  height: 2rem;
+  border-radius: 50%;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav div > * {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+select {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  width: 3.5rem;
+}
+
+.contain {
+  box-sizing: border-box;
+  width: calc( 100vw - 1rem );
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .contain {
+    flex-direction: row;
+  }
+}
+.contain div {
+  margin: 1rem;
+}
+.contain h1 {
+  box-sizing: border-box;
+  width: 95%;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contain .order {
+  width: 95%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc( 100vw - 1rem );
+}
+.contain .order div {
+  width: 95%;
+  height: 10rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.75rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.contain .order div > * {
+  margin: 0;
+}
+.contain .order div p:first-of-type {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tickets {
+  box-sizing: border-box;
+  width: 95%;
+  height: 35rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1000px) {
+  .tickets {
+    width: 45%;
+  }
+}
+.tickets > * {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.tickets img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.tickets div {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+.tickets div > * {
+  margin-left: 0.3rem;
+}
+
+.best-sellers {
+  box-sizing: border-box;
+  width: 95%;
+  height: 35rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.best-sellers table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.best-sellers table td {
+  padding: 1rem;
+}
+.best-sellers table th {
+  padding: 0.5rem;
+}
+.best-sellers table tr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.best-sellers table tr:nth-child(even) {
+  background-color: #ddd;
+}
+.best-sellers table tr:first-child th {
+  border: 1px solid #aaa;
+}
+.best-sellers h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .best-sellers h4 {
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .best-sellers {
+    width: 48%;
+  }
+}
+
+.best-sellers-nav {
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+}
+.best-sellers-nav i {
+  padding: 0.2rem;
+}
+.best-sellers-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.best-sellers-nav ul li {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #aaa;
+  border-radius: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.disabled {
+  color: #ddd;
+  cursor: unset;
+}
+
+.active {
+  border-color: black !important;
+  color: black;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
