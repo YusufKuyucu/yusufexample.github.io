@@ -1,0 +1,369 @@
+@import './_config'
+main
+  width: 100vw
+#toggleIcon
+  cursor: pointer
+  font-size: 1.5rem
+.nav
+  position: sticky
+  z-index: 1
+  top: 0
+  left: 0
+  .mobile
+    @media  ( min-width: 900px )
+      display: none
+
+  .topnav, .desktop
+    position: absolute
+    z-index: 4
+    top: 0
+    left: 0
+    width: 100%
+    padding: 1rem 2rem
+    font:
+      size: 1.2rem
+      weight: 600
+      style: italic
+    box-sizing: border-box
+    background-color: lighten($color1, 10)
+    @include flex(row,space-between, center)
+    
+    @include shadow(2,15)
+    
+  .sideMenu
+    position: absolute
+    top: 0
+    left: -98%
+    z-index: 3
+    width: 50%
+    height: 100vh
+    padding-top: 5rem
+    font:
+      size: 1.2rem
+      weight: 500
+    @include shadow(2, 15)
+    background-color: lighten($color1, 10)
+    transition: 0.2s ease-in-out
+    @media  ( min-width: 600px )
+      width: 25%
+  .menu-btn
+      padding: .5rem
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+      position: relative
+      text-transform: uppercase
+      overflow: hidden
+      cursor: pointer
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 100%
+        width: 100%
+        height: 100%
+        display: block
+        background: #fff
+        border-bottom: 1px solid $color1
+        transform: scale(1.02)
+        transition: 0.25s
+      &:hover:after
+        z-index: -1
+        position: absolute
+        left: 0
+        transform: scale(1)
+        border-bottom: 1px solid $color1
+        background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0.2))
+      &:focus
+        background-color: red
+  .desktop
+    display: none
+    @media  ( min-width: 900px )
+      display: flex
+      ul
+        display: flex
+        font-style: normal
+        li
+          padding:
+            left: .5rem
+            right: .5rem
+section
+  @include flex(column, center, center)
+  box-sizing: border-box
+  width: 100vw
+.active
+  background-color: rgba(255, 255, 255, 0.3)
+  border:
+    color: #fff
+.home
+  z-index: 0
+  height: 100vh
+  background:
+    size: auto 100vh
+    position: center
+    repeat: no-repeat
+    image: url('https://cdn.pixabay.com/photo/2016/03/27/21/59/bread-1284438_960_720.jpg')
+  object-fit: cover
+  color: #fff
+  .social
+    position: absolute
+    width: 100%
+    bottom: 3%
+    @include flex()
+    background: rgb(0,0,0)
+    background: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%)
+    & ul
+      display: flex
+      li
+        padding: .2rem .5rem
+        border-radius: .5rem
+        margin: .2rem
+        position: relative
+        transition: 0.5s ease
+        overflow: hidden
+        @media ( min-width: 600px )
+          margin:
+            left: 1rem
+            right: 1rem
+          
+        &:after
+          content: ''
+          position: absolute
+          top: 100%
+          left: 0
+          display: block
+          width: 100%
+          height: 100%
+          border-radius: .5rem
+          background-color: rgba(255, 255, 255, 0.5)
+          transition: 0.2s ease
+        &:hover:after
+          top: 0
+        &:first-child
+          background-color: #CF2872
+        &:nth-child(2)
+          background-color: #1C9CEA
+        &:nth-child(3)
+          background-color: #3A5794
+        &:last-child
+          background-color: red
+  
+  h1
+    @include flex(column)
+    font:
+      style: italic
+      size: 3rem
+    border:
+      bottom: 1px solid #fff
+      radius: 1rem
+    background-color: rgba(0, 0, 0, 0.5)
+    padding: 1rem
+    span
+      font:
+        size: 4rem
+        style: normal
+.uberUns
+  padding: 20% 2rem
+  background-color: pink
+  @media ( min-width: 600px )
+    font-size: 1.5rem
+    padding:
+      left: 10%
+      right: 10%
+  h2
+    text-align: center
+    margin: 2rem 0
+    font:
+      size: 4rem
+  button
+    margin: 2rem 0
+    padding: 1rem 2rem
+    outline: none
+    font:
+      size: 1.2rem
+      weight: 400
+    border: 0.1rem solid #fff
+    background-color: unset
+    cursor: pointer
+    position: relative
+    overflow: hidden
+    @media ( min-width: 600px )
+      margin: 4rem 0
+    &::after
+      z-index: -1
+      content: ''
+      display: block
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 100%
+      left: 0
+      background-color: rgba(255, 255, 255, 0.3)
+      transition: 0.2s ease
+    &:hover::after
+      top: 0
+    
+.service
+  background:
+    position: center
+    image: url('https://cdn.pixabay.com/photo/2016/11/29/09/00/doughnuts-1868573_960_720.jpg')
+    color: #fff
+    object-fit: cover
+    size: auto 100%
+  min-height: 80vh
+  position: relative
+  top: 0
+  article
+    margin: 2rem
+    padding: 2rem
+    color: #fff
+    line-height: 2rem
+    font:
+      weight: 500
+    width: 90%
+    background-color: rgba(0, 0, 0, 0.75)
+    @include flex(column,center, center)
+    border: 1px solid rgba(255, 255, 255, 0.5)
+      radius: 1rem
+    @include shadow(2, 75)
+    @media  ( min-width: 600px)
+      width: 75%
+      font-size: 1.2rem
+    
+    
+  img
+    width: 5rem
+    margin-bottom: 1rem
+    align-self: flex-end
+  
+.produkte
+  margin:
+    top: 2rem
+    bottom: 2rem
+    box-sizing: border-box
+  position: relative
+  overflow-y: hidden
+  height: 30rem
+  justify-content: flex-start
+  background-color: pink
+  padding: 2rem 0
+  transition: 0.3s ease
+  @media  ( min-width: 600px)
+    font-size: 1.2rem
+
+  nav
+    width: 100%
+    @include flex(row,center, center)
+    
+    ul
+      display: flex
+      justify-content: center
+      li
+        padding: .2rem .5rem
+        cursor: pointer
+        border:
+          radius: .4rem .4rem 0 0
+          bottom: 1px solid #fff
+          left: 1px solid rgba(255, 255, 255, 0.5)
+          right: 1px solid rgba(255, 255, 255, 0.5)
+          top: 1px solid rgba(255, 255, 255, 0.5)
+  img
+    width: 7rem
+    height: 5rem
+    margin-right: 1rem
+    border: 1px solid #fff
+      radius: .5rem
+    @media  ( min-width: 600px)
+      width: 15rem
+      height: 13rem
+.items
+  @include flex(column, flex-start, center)
+  background-color: rgba(255, 255, 255, 0.5)
+
+  .item
+    margin:
+      top: .5rem
+      bottom: 1rem
+    padding: 1rem .5rem
+    width: 90%
+    border:1px solid white
+    border-top: none
+    @include flex(row,flex-start, flex-start)
+    @include shadow(2, 20)
+    border: 1px solid darken(pink, 10)
+    p
+      font-size: .9rem
+      @media  ( min-width: 600px )
+        font-size: 1.2rem
+    
+  a
+    position: absolute
+    border: 1px solid gray
+    width: 90%
+    bottom: 0
+    left: auto
+    right: auto
+    text-align: center
+    padding:
+      top: 0.5rem
+      bottom: .5rem
+    background-color: $color1
+    transition: .2s ease
+.kontakt
+  background-color: #fff
+  padding:
+    top: 4rem
+    bottom: 4rem
+form
+  width: 90%
+  @include shadow(3, 25)
+  
+  @media  ( min-width: 600px )
+    width: 75%
+  fieldset
+    @include flex(column,center, center)
+    border:
+      color: $color1
+      radius: .5rem
+    background-color: pink
+    legend
+      background-color: unset
+    div
+      width: 90%
+      padding: .25rem
+      input
+        line-height: 1.5rem
+      input, textarea
+        width: 100%
+        margin:
+          top: .2rem
+          bottom: .2rem
+        border: none
+          radius: .3rem
+      &:last-child
+        padding: 1rem
+        @include flex(row,flex-end, center)
+        
+      button
+        padding: .5rem 2rem
+        font:
+          size: 1.2rem
+        background-color: $color1
+        border: none
+
+footer
+  background-color: #333
+  height: 3rem
+  font:
+    size: 1.5rem
+  @include flex(row, center, center)
+  color: #fff
+  div
+    display: inline-flex
+    a
+      position: relative
+      background-color: unset
+      border: none
+    span
+      margin: auto 1rem
+  
+
+    
