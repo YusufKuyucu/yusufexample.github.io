@@ -26,9 +26,7 @@ function addTodo(e) {
 
   if (input.value !== "") {
     todos.appendChild(task);
-    todoList.push(input.value);
     input.value = "";
-    console.log(todoList);
   }
 }
 
