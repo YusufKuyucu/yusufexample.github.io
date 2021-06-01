@@ -13,11 +13,7 @@ const tops = [topLeft, topCenter, topRight];
 
 let xIsNext = true;
 
-const winCheck = () => {
-  if ((topLeft.innerHTML & topCenter.innerHTML & topRight.innerHTML) == "X") {
-    console.log("win");
-  }
-};
+
 
 // eventListeners
 
@@ -33,11 +29,9 @@ for (cell of cells) {
       return;
     } else if (xIsNext) {
       e.target.innerText = "X";
-      winCheck();
       xIsNext = !xIsNext;
     } else {
       e.target.innerText = "O";
-      winCheck();
       xIsNext = !xIsNext;
     }
   });
